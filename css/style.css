@@ -1,0 +1,159 @@
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+}
+
+h2 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+
+h3{
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 0;
+}
+
+p {
+    color: hsl(204, 43%, 93%);
+    text-align: left;
+}
+
+.main-container {
+    
+    max-width: 700px;
+    width: 70%;
+    margin: 100px auto;
+}
+
+.top-container {
+    background-color: white;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.top-container p {
+    color: hsl(218, 22%, 67%);
+    line-height: 2;
+}
+
+.wrap {
+    padding: 25px 40px;
+    text-align: left;
+}
+
+.bottom-container {
+    display: flex;
+    width: 100%;
+}
+
+.lower-titles {
+    color: white;
+    padding-top: 20px;
+}
+
+/* Left Container */
+
+.left-container {
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 5px;
+    width: 50%;
+
+}
+
+.price {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.month {
+    position: relative;
+    bottom: 5px;
+    color: hsl(179, 62%, 35%);
+}
+
+.month p{
+    font-weight: 100;
+}
+
+.btn {
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    border: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 3;
+    padding: 5px 40px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    background-color: hsl(72, 80%, 54%)
+}
+
+/* Right Container */
+
+.right-container {
+    background-color: hsl(179, 62%, 46%);
+    border-bottom-right-radius: 5px;
+    padding-right: 10px;
+    width: 50%;
+  
+}
+
+.right-container p{
+    width: 70%;
+}
+
+/* footer*/
+
+.attribute{
+    color: hsl(218, 22%, 67%);
+    margin: auto;
+    text-align: center;
+}
+
+.attribute a{
+    text-decoration: none;
+    color: hsl(179, 62%, 33%);;
+}
+
+.attribute a:hover{
+    color: hsl(179, 62%, 43%);
+}
+
+.attribute a:active {
+    color: hsl(179, 62%, 53%);
+}
+
+
+@media (max-width: 750px) {
+    .main-container {
+        width: 90%;
+    }
+
+    .bottom-container {
+        flex-direction: column;
+    }
+
+    .left-container {
+        border-bottom-left-radius: 0;
+        width: 100%;
+    }
+
+    .right-container {
+        border-bottom-left-radius: 5px;
+        width: 100%;
+        padding-right: 0;
+    }
+}
