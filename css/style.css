@@ -30,7 +30,7 @@ p {
 }
 
 .top-container {
-    background-color: white;
+    background-color: #fff;
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -52,7 +52,7 @@ p {
 }
 
 .lower-titles {
-    color: white;
+    color: #fff;
     padding-top: 20px;
 }
 
@@ -61,8 +61,7 @@ p {
 .left-container {
     background-color: hsl(179, 62%, 43%);
     border-bottom-left-radius: 5px;
-    width: 50%;
-
+    flex: 1;
 }
 
 .price {
@@ -90,15 +89,21 @@ p {
     padding: 5px 40px;
     text-align: center;
     margin-top: 25px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.237);
 }
 
 .btn a{
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
 .btn:hover {
-    background-color: hsl(72, 80%, 54%)
+    background-color: hsl(72, 80%, 54%);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.237);
+}
+
+.btn:active {
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.237);
 }
 
 /* Right Container */
@@ -107,25 +112,28 @@ p {
     background-color: hsl(179, 62%, 46%);
     border-bottom-right-radius: 5px;
     padding-right: 10px;
-    width: 50%;
-  
+    flex: 1;
 }
 
-.right-container p{
-    width: 70%;
+ul {
+    list-style: none;
+    text-align: left;
+    color: hsl(204, 43%, 93%);
+    padding-left: 0;
 }
 
-/* footer*/
+/* footer */
 
-.attribute{
+.attribute {
     color: hsl(218, 22%, 67%);
     margin: auto;
     text-align: center;
 }
 
+
 .attribute a{
     text-decoration: none;
-    color: hsl(179, 62%, 33%);;
+    color: hsl(179, 62%, 33%);
 }
 
 .attribute a:hover{
@@ -140,6 +148,7 @@ p {
 @media (max-width: 750px) {
     .main-container {
         width: 90%;
+        margin: 3rem auto;
     }
 
     .bottom-container {
